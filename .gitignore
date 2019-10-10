@@ -1,0 +1,8 @@
+.vagrant
+log
+.DS_Store
+.idea/
+
+# bundler
+vendor/
+.bundle/

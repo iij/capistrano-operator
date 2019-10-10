@@ -1,0 +1,12 @@
+#!/usr/bin/env ruby
+require 'rake'
+
+load File.expand_path('../lib/capistrano/tasks/install.rake', File.dirname(__FILE__))
+op_name = ARGV[0]
+
+if op_name != 'install'
+  puts "Please enter: bundle exec operator install"
+  exit 1
+end
+
+Rake::Task["operator:#{op_name}"].execute

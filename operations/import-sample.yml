@@ -1,0 +1,16 @@
+vars:
+  filename: 'piyo.txt'
+  greeting: 'hello'
+tasks:
+  - import: imports/touch
+    vars:
+      file: '{{filename}}'
+  - execute_commands:
+      - "echo '{{greeting}}' >> {{filename}}"
+    check_commands:
+      - 'ls -l'
+      - 'cat {{filename}}'
+    highlight:
+      - 'hoge'
+      - 'test'
+  - import: imports/rm

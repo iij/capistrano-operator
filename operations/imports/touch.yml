@@ -1,0 +1,7 @@
+vars:
+  file: 'hoge.txt'
+tasks:
+  - execute_commands:
+      - "touch {{file}}"
+    check_commands:
+      - 'ls -l | grep {{file}}'

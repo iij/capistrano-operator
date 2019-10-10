@@ -1,0 +1,7 @@
+vars:
+  file: 'hoge.txt'
+tasks:
+  - execute_commands:
+      - 'rm {{file}}'
+    check_commands:
+      - 'ls -l {{file}}'

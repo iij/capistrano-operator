@@ -1,0 +1,9 @@
+tasks:
+  - execute_commands:
+      - "touch capistrano-test.txt"
+    check_commands:
+      - 'ls -l capistrano-test.txt'
+  - execute_commands:
+      - 'rm capistrano-test.txt'
+    check_commands:
+      - 'ls -l capistrano-test.txt'

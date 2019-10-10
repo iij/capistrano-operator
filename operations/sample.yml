@@ -1,0 +1,12 @@
+tasks:
+  - execute_commands:
+      - "service monit stop"
+      - "service tomcat stop"
+      - "service httpd stop"
+    check_commands:
+      - 'ps aux | egrep "(monit|apache|tomcat)"'
+  - execute_commands:
+      - '~/admin/tools/install-base.sh'
+  - cronfile: '/var/spool/cron/admin'
+    comment_out: true
+    match: '/var/service/smf/bin/proxy_periodic.rb'
