@@ -1,5 +1,7 @@
 # Capistrano::Operator
 
+[![Gem Version](https://badge.fury.io/rb/capistrano-operator.svg)](https://badge.fury.io/rb/capistrano-operator)
+
 It is a tool for semi-automating shell work in maintenance.
 Capistrano-operator executes shell commands described by yaml operation files to the host.
 
