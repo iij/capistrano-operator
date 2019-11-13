@@ -9,8 +9,8 @@ Gem::Specification.new do |spec|
   spec.authors       = ['r-fujimoto','ukida']
   spec.email         = ['r-fujimoto@iij.ad.jp','ukida@iij.ad.jp']
 
-  spec.summary       = %q{Capistrano semi-automate operation tool}
-  spec.description   = %q{Providing semi-automate operation in maintenance while checking commands to be executed.}
+  spec.summary       = %q{semi-automating shell work in maintenance}
+  spec.description   = %q{It is a tool for semi-automating shell work in maintenance. Capistrano-operator executes shell commands described by yaml operation files to the host.}
   spec.homepage      = 'https://github.com/iij/capistrano-operator'
   spec.license       = 'MIT'
 
