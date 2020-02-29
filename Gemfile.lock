@@ -42,7 +42,7 @@ GEM
       sawyer (~> 0.8.0, >= 0.5.3)
     public_suffix (3.0.3)
     rainbow (3.0.0)
-    rake (12.3.2)
+    rake (13.0.1)
     retriable (2.1.0)
     sawyer (0.8.1)
       addressable (>= 2.3.5, < 2.6)
